@@ -1,0 +1,227 @@
+name: hermes
+
+# VALKEY SETTINGS
+
+x-valkey-env: &valkey-env
+  VALKEY_HOST: hermes-valkey
+  VALKEY_PORT: 6379
+  VALKEY_PASSWORD: ${VALKEY_PASSWORD}
+
+x-valkey-settings: &valkey-settings
+  environment:
+    <<: *valkey-env
+  networks:
+    - valkey
+  depends_on:
+    - valkey
+
+# MARIADB SETTINGS
+
+x-mariadb-env: &mariadb-env
+  MARIADB_HOST: hermes-mariadb
+  MARIADB_PORT: 3306
+  MARIADB_USER: root
+  MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+  MARIADB_DB: hermes
+
+# TELEGRAM API CREDENTIALS
+
+x-telegram-credentials: &telegram-credentials
+  TELEGRAM_API_ID: ${TELEGRAM_API_ID}
+  TELEGRAM_API_HASH: ${TELEGRAM_API_HASH}
+
+# GPU PASSTHROUGH SETTINGS
+
+x-gpu-settings: &gpu-settings
+  runtime: nvidia
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: 1
+            capabilities: [gpu]
+
+networks:
+  valkey:
+  mariadb:
+  internal_api:
+
+volumes:
+  valkey_data:
+  mariadb_data:
+  telegram_sessions:
+
+services:
+
+  # DB
+
+  valkey:
+    container_name: hermes-valkey
+    image: bitnami/valkey:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - valkey_data:/bitnami/valkey/data
+    environment:
+      - VALKEY_PASSWORD=${VALKEY_PASSWORD}
+    networks:
+      - valkey
+
+  mariadb:
+    container_name: hermes-mariadb
+    image: mariadb:latest
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_DATABASE=hermes
+      - MYSQL_ROOT_PASSWORD=${MARIADB_PASSWORD}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    networks:
+      - mariadb
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # API
+
+  docker-api:
+    container_name: hermes-docker-api
+    build:
+      context: .
+      dockerfile: ./hermes_docker_api/Dockerfile
+    environment:
+      <<: [*mariadb-env, *valkey-env, *telegram-credentials]
+    networks:
+      - mariadb
+      - internal_api
+    volumes:
+      - telegram_sessions:/telegram_sessions
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    restart: on-failure:5
+
+  spring-api:
+    container_name: hermes-spring-api
+    build:
+      context: ./HermesSpringApi
+    ports:
+      - "8080:8080"
+    environment:
+      <<: [*mariadb-env, *valkey-env]
+      HERMES_PYTHON_API_URL: http://hermes-python-api:8080/telegram
+      HERMES_DOCKER_API_URL: http://hermes-docker-api:8080/
+    networks:
+      - mariadb
+      - internal_api
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    restart: on-failure:5
+
+  python-api:
+    container_name: hermes-python-api
+    build:
+      context: .
+      dockerfile: ./hermes_python_api/Dockerfile
+    volumes:
+      - telegram_sessions:/telegram_sessions
+    environment:
+      <<: [*valkey-env, *telegram-credentials]
+      HERMES_DOCKER_API_URL: http://hermes-docker-api:8080/
+    networks:
+      - valkey
+      - internal_api
+    depends_on:
+      - valkey
+    restart: on-failure:5
+
+  # PYTHON SCRIPTS TO CLASSIFY
+
+  cleaner:
+    container_name: hermes-cleaner
+    build:
+      context: .
+      dockerfile: ./hermes_cleaner/Dockerfile
+    <<: *valkey-settings
+
+  translator:
+    container_name: hermes-translator
+    build:
+      context: .
+      dockerfile: ./hermes_translator/Dockerfile
+    restart: on-failure:5
+    <<: [*valkey-settings, *gpu-settings]
+
+  classifier:
+    container_name: hermes-classifier
+    build:
+      context: .
+      dockerfile: ./hermes_classifier/Dockerfile
+    restart: on-failure:5
+    <<: *gpu-settings
+    environment:
+      <<: *valkey-env
+    networks:
+      - valkey
+    volumes:
+      - /mnt/mint-data/hermes/user_models:/user_models
+    depends_on:
+      - valkey
+
+  evaluator:
+    container_name: hermes-evaluator
+    build:
+      context: .
+      dockerfile: ./hermes_evaluator/Dockerfile
+    restart: on-failure:5
+    environment:
+      <<: [*valkey-env, *mariadb-env]
+    networks:
+      - valkey
+      - mariadb
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      valkey:
+        condition: service_started
+
+  trainer:
+    container_name: hermes-trainer
+    build:
+      context: .
+      dockerfile: ./hermes_trainer/Dockerfile
+    environment:
+      <<: *mariadb-env
+    networks:
+      - mariadb
+    volumes:
+      - /mnt/mint-data/hermes/user_models:/user_models
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    restart: on-failure:5
+    <<: *gpu-settings
+
+  notifier:
+    container_name: hermes-notifier
+    build:
+      context: .
+      dockerfile: ./hermes_notifier/Dockerfile
+    restart: on-failure:5
+    environment:
+      <<: [*mariadb-env, *valkey-env]
+      GOOGLE_CLOUD_PROJECT: ${GOOGLE_CLOUD_PROJECT}
+    networks:
+      - mariadb
+      - valkey
+    depends_on:
+      mariadb:
+        condition: service_healthy

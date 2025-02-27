@@ -1,0 +1,325 @@
+2024-06-25 09:29:58,007 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 09:29:58,009 INFO supervisord started with pid 1
+2024-06-25 09:29:59,011 INFO spawned: 'main' with pid 6
+2024-06-25 09:30:00,012 INFO success: main entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 09:40:03,966 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 09:40:03,968 INFO supervisord started with pid 1
+2024-06-25 09:40:04,971 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 09:40:05,974 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 09:44:40,393 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 09:44:40,398 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 09:44:40,398 INFO supervisord started with pid 1
+2024-06-25 09:44:41,404 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 09:44:42,407 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 09:45:50,598 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 09:45:50,604 INFO RPC interface 'supervisor' initialized
+2024-06-25 09:45:50,605 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 09:45:50,605 INFO supervisord started with pid 1
+2024-06-25 09:45:51,608 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 09:45:52,610 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 09:49:37,873 INFO waiting for hermes_reader to stop
+2024-06-25 09:49:37,876 WARN stopped: hermes_reader (terminated by SIGTERM)
+2024-06-25 09:49:37,880 INFO spawned: 'hermes_reader' with pid 22
+2024-06-25 09:49:38,882 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 10:30:54,661 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 10:30:54,666 INFO RPC interface 'supervisor' initialized
+2024-06-25 10:30:54,666 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 10:30:54,667 INFO supervisord started with pid 1
+2024-06-25 10:30:55,669 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 10:30:55,691 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:30:56,696 INFO spawned: 'hermes_reader' with pid 8
+2024-06-25 10:30:56,741 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:30:58,744 INFO spawned: 'hermes_reader' with pid 9
+2024-06-25 10:30:59,776 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 10:30:59,776 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:31:00,782 INFO spawned: 'hermes_reader' with pid 10
+2024-06-25 10:31:00,840 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:31:01,845 INFO spawned: 'hermes_reader' with pid 11
+2024-06-25 10:31:01,890 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:31:03,896 INFO spawned: 'hermes_reader' with pid 12
+2024-06-25 10:31:03,937 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:31:06,944 INFO spawned: 'hermes_reader' with pid 13
+2024-06-25 10:31:06,994 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:31:07,996 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-25 10:33:48,603 INFO spawned: 'hermes_reader' with pid 29
+2024-06-25 10:33:48,623 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:49,627 INFO spawned: 'hermes_reader' with pid 30
+2024-06-25 10:33:49,672 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:52,511 INFO spawned: 'hermes_reader' with pid 31
+2024-06-25 10:33:52,555 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:55,561 INFO spawned: 'hermes_reader' with pid 33
+2024-06-25 10:33:55,579 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:55,596 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-25 10:33:55,600 INFO spawned: 'hermes_reader' with pid 34
+2024-06-25 10:33:55,616 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:56,621 INFO spawned: 'hermes_reader' with pid 35
+2024-06-25 10:33:56,669 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:33:58,678 INFO spawned: 'hermes_reader' with pid 36
+2024-06-25 10:33:58,724 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:34:02,641 INFO spawned: 'hermes_reader' with pid 37
+2024-06-25 10:34:02,689 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:34:03,691 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-25 10:41:29,123 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 10:41:29,128 INFO RPC interface 'supervisor' initialized
+2024-06-25 10:41:29,128 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 10:41:29,128 INFO supervisord started with pid 1
+2024-06-25 10:41:30,133 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 10:41:30,184 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:31,189 INFO spawned: 'hermes_reader' with pid 8
+2024-06-25 10:41:31,239 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:33,244 INFO spawned: 'hermes_reader' with pid 9
+2024-06-25 10:41:33,280 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:36,285 INFO spawned: 'hermes_reader' with pid 10
+2024-06-25 10:41:37,319 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-25 10:41:37,320 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:38,326 INFO spawned: 'hermes_reader' with pid 11
+2024-06-25 10:41:38,409 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:39,411 INFO spawned: 'hermes_reader' with pid 12
+2024-06-25 10:41:39,437 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:41,444 INFO spawned: 'hermes_reader' with pid 13
+2024-06-25 10:41:41,519 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:44,525 INFO spawned: 'hermes_reader' with pid 14
+2024-06-25 10:41:44,561 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:41:45,562 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-25 10:45:09,962 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 10:45:09,967 INFO RPC interface 'supervisor' initialized
+2024-06-25 10:45:09,967 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 10:45:09,967 INFO supervisord started with pid 1
+2024-06-25 10:45:10,971 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 10:45:11,434 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:45:12,440 INFO spawned: 'hermes_reader' with pid 10
+2024-06-25 10:45:12,941 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:45:14,944 INFO spawned: 'hermes_reader' with pid 13
+2024-06-25 10:45:15,389 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:45:18,393 INFO spawned: 'hermes_reader' with pid 16
+2024-06-25 10:45:18,727 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 10:45:19,728 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-25 12:45:48,152 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-25 12:45:48,157 INFO RPC interface 'supervisor' initialized
+2024-06-25 12:45:48,157 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-25 12:45:48,157 INFO supervisord started with pid 1
+2024-06-25 12:45:49,161 INFO spawned: 'hermes_reader' with pid 7
+2024-06-25 12:45:49,584 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 12:45:50,589 INFO spawned: 'hermes_reader' with pid 10
+2024-06-25 12:45:51,005 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 12:45:53,011 INFO spawned: 'hermes_reader' with pid 13
+2024-06-25 12:45:53,377 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 12:45:56,382 INFO spawned: 'hermes_reader' with pid 16
+2024-06-25 12:45:56,866 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-25 12:45:57,868 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-27 15:57:21,761 WARN received SIGTERM indicating exit request
+2024-06-30 15:27:56,601 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-30 15:27:56,627 INFO RPC interface 'supervisor' initialized
+2024-06-30 15:27:56,627 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-30 15:27:56,649 INFO supervisord started with pid 1
+2024-06-30 15:27:57,654 INFO spawned: 'hermes_reader' with pid 7
+2024-06-30 15:27:58,153 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:27:59,157 INFO spawned: 'hermes_reader' with pid 10
+2024-06-30 15:27:59,620 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:01,624 INFO spawned: 'hermes_reader' with pid 13
+2024-06-30 15:28:03,097 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-30 15:28:03,098 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:04,100 INFO spawned: 'hermes_reader' with pid 16
+2024-06-30 15:28:04,519 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:05,523 INFO spawned: 'hermes_reader' with pid 19
+2024-06-30 15:28:05,961 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:07,965 INFO spawned: 'hermes_reader' with pid 22
+2024-06-30 15:28:08,309 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:11,315 INFO spawned: 'hermes_reader' with pid 25
+2024-06-30 15:28:11,710 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:28:12,712 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-30 15:39:06,202 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-30 15:39:06,217 INFO RPC interface 'supervisor' initialized
+2024-06-30 15:39:06,218 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-30 15:39:06,218 INFO supervisord started with pid 1
+2024-06-30 15:39:07,223 INFO spawned: 'hermes_reader' with pid 7
+2024-06-30 15:39:07,601 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:39:08,605 INFO spawned: 'hermes_reader' with pid 10
+2024-06-30 15:39:08,965 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:39:10,972 INFO spawned: 'hermes_reader' with pid 13
+2024-06-30 15:39:11,336 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:39:14,341 INFO spawned: 'hermes_reader' with pid 16
+2024-06-30 15:39:14,704 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:39:15,705 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-30 15:46:52,965 INFO spawned: 'hermes_reader' with pid 50
+2024-06-30 15:46:53,289 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:46:54,294 INFO spawned: 'hermes_reader' with pid 53
+2024-06-30 15:46:54,645 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:46:56,652 INFO spawned: 'hermes_reader' with pid 56
+2024-06-30 15:46:57,000 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:00,009 INFO spawned: 'hermes_reader' with pid 59
+2024-06-30 15:47:00,379 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:00,727 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-30 15:47:00,731 INFO spawned: 'hermes_reader' with pid 63
+2024-06-30 15:47:01,045 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:02,051 INFO spawned: 'hermes_reader' with pid 66
+2024-06-30 15:47:02,400 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:04,797 INFO spawned: 'hermes_reader' with pid 69
+2024-06-30 15:47:05,157 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:08,570 INFO spawned: 'hermes_reader' with pid 73
+2024-06-30 15:47:08,923 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:47:09,924 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-30 15:48:01,883 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-30 15:48:01,888 INFO RPC interface 'supervisor' initialized
+2024-06-30 15:48:01,888 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-30 15:48:01,888 INFO supervisord started with pid 1
+2024-06-30 15:48:02,892 INFO spawned: 'hermes_reader' with pid 7
+2024-06-30 15:48:03,270 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:48:04,274 INFO spawned: 'hermes_reader' with pid 10
+2024-06-30 15:48:04,627 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:48:06,633 INFO spawned: 'hermes_reader' with pid 13
+2024-06-30 15:48:06,992 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:48:09,997 INFO spawned: 'hermes_reader' with pid 16
+2024-06-30 15:48:10,466 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:48:11,467 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-06-30 15:50:00,342 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-30 15:50:00,346 INFO RPC interface 'supervisor' initialized
+2024-06-30 15:50:00,346 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-06-30 15:50:00,347 INFO supervisord started with pid 1
+2024-06-30 15:50:01,351 INFO spawned: 'hermes_reader' with pid 7
+2024-06-30 15:50:01,719 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:50:02,724 INFO spawned: 'hermes_reader' with pid 10
+2024-06-30 15:50:03,076 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:50:05,081 INFO spawned: 'hermes_reader' with pid 13
+2024-06-30 15:50:05,421 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:50:08,428 INFO spawned: 'hermes_reader' with pid 16
+2024-06-30 15:50:08,819 WARN exited: hermes_reader (exit status 1; not expected)
+2024-06-30 15:50:09,821 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:27:49,101 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:27:49,141 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:27:49,141 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:27:49,141 INFO supervisord started with pid 1
+2024-07-13 08:27:50,144 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:27:50,726 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:27:51,730 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:27:53,197 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:27:53,197 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:27:54,199 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:27:54,653 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:27:55,656 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:27:57,109 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:27:57,110 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:27:58,114 INFO spawned: 'hermes_reader' with pid 19
+2024-07-13 08:27:58,526 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:27:59,530 INFO spawned: 'hermes_reader' with pid 22
+2024-07-13 08:27:59,863 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:28:01,870 INFO spawned: 'hermes_reader' with pid 25
+2024-07-13 08:28:02,219 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:28:05,225 INFO spawned: 'hermes_reader' with pid 28
+2024-07-13 08:28:05,606 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:28:06,608 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:29:44,842 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:29:44,847 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:29:44,847 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:29:44,847 INFO supervisord started with pid 1
+2024-07-13 08:29:45,851 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:29:46,230 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:29:47,235 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:29:47,532 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:29:49,538 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:29:49,835 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:29:52,842 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:29:53,192 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:29:54,194 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:37:13,818 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:37:13,823 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:37:13,823 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:37:13,823 INFO supervisord started with pid 1
+2024-07-13 08:37:14,828 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:37:15,142 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:37:16,147 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:37:16,442 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:37:18,446 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:37:18,878 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:37:21,883 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:37:22,322 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:37:23,323 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:40:00,826 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:40:00,831 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:40:00,831 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:40:00,831 INFO supervisord started with pid 1
+2024-07-13 08:40:01,836 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:40:02,174 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:40:03,178 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:40:03,474 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:40:05,480 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:40:05,860 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:40:08,867 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:40:09,198 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:40:10,200 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:42:24,356 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:42:24,360 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:42:24,360 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:42:24,361 INFO supervisord started with pid 1
+2024-07-13 08:42:25,365 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:42:25,705 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:42:26,708 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:42:27,029 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:42:29,034 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:42:29,530 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:42:32,535 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:42:32,983 WARN exited: hermes_reader (exit status 0; not expected)
+2024-07-13 08:42:33,985 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:43:52,143 WARN received SIGTERM indicating exit request
+2024-07-13 08:43:53,054 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:43:53,061 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:43:53,061 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:43:53,061 INFO supervisord started with pid 1
+2024-07-13 08:43:54,065 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:43:54,517 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:43:55,522 INFO spawned: 'hermes_reader' with pid 10
+2024-07-13 08:43:55,964 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:43:57,969 INFO spawned: 'hermes_reader' with pid 13
+2024-07-13 08:43:58,360 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:44:01,368 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:44:01,770 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:44:02,770 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:44:55,269 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:44:55,276 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:44:55,276 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:44:55,276 INFO supervisord started with pid 1
+2024-07-13 08:44:56,279 INFO spawned: 'hermes_reader' with pid 6
+2024-07-13 08:44:56,621 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:44:57,626 INFO spawned: 'hermes_reader' with pid 9
+2024-07-13 08:44:57,945 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:44:59,952 INFO spawned: 'hermes_reader' with pid 12
+2024-07-13 08:45:00,312 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:45:03,319 INFO spawned: 'hermes_reader' with pid 15
+2024-07-13 08:45:03,664 WARN exited: hermes_reader (exit status 1; not expected)
+2024-07-13 08:45:04,665 INFO gave up: hermes_reader entered FATAL state, too many start retries too quickly
+2024-07-13 08:46:01,586 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:46:01,591 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:46:01,591 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:46:01,592 INFO supervisord started with pid 1
+2024-07-13 08:46:02,596 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:46:03,598 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:49:28,271 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:49:28,276 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:49:28,276 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:49:28,276 INFO supervisord started with pid 1
+2024-07-13 08:49:29,280 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:49:30,283 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:50:01,717 INFO waiting for hermes_reader to stop
+2024-07-13 08:50:01,720 WARN stopped: hermes_reader (terminated by SIGTERM)
+2024-07-13 08:50:01,724 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 08:50:02,725 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:53:01,981 INFO waiting for hermes_reader to stop
+2024-07-13 08:53:01,984 WARN stopped: hermes_reader (terminated by SIGTERM)
+2024-07-13 08:55:14,906 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 08:55:14,913 INFO RPC interface 'supervisor' initialized
+2024-07-13 08:55:14,913 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 08:55:14,914 INFO supervisord started with pid 1
+2024-07-13 08:55:15,918 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 08:55:16,921 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 08:56:15,029 INFO waiting for hermes_reader to stop
+2024-07-13 08:56:15,031 WARN stopped: hermes_reader (terminated by SIGTERM)
+2024-07-13 09:02:46,098 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-07-13 09:02:46,102 INFO RPC interface 'supervisor' initialized
+2024-07-13 09:02:46,102 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2024-07-13 09:02:46,102 INFO supervisord started with pid 1
+2024-07-13 09:02:47,107 INFO spawned: 'hermes_reader' with pid 7
+2024-07-13 09:02:48,109 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-07-13 09:03:44,833 INFO waiting for hermes_reader to stop
+2024-07-13 09:03:44,836 WARN stopped: hermes_reader (terminated by SIGTERM)
+2024-07-13 09:03:44,839 INFO spawned: 'hermes_reader' with pid 16
+2024-07-13 09:03:45,841 INFO success: hermes_reader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

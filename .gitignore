@@ -1,0 +1,5 @@
+**/*.egg-info/
+**/__pycache__/
+user_models/
+hermes_notifier/firebase_credentials.json
+.env
